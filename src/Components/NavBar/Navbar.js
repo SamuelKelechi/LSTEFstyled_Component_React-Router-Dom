@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {FaMagento} from 'react-icons/fa'
 import {FaBars, FaTimes} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
 import {
     Nav, 
     NavContainer,  
@@ -29,10 +30,10 @@ function Navbar() {
                 {click ?<FaTimes />:<FaBars />}
             </MobileIcon>
             <NavBar onClick={handClick} click={click}>
-                <NavLinks>Home</NavLinks>
-                <NavLinks>Contact</NavLinks>
-                <NavLinks>Services</NavLinks>
-                <NavLinks>Blog</NavLinks>
+                <Link to="/" style={{color:"white", textDecoration:"none"}}><NavLinks >Home</NavLinks></Link>
+                <Link to="/contact" style={{color:"white", textDecoration:"none"}}><NavLinks>Contact</NavLinks></Link>
+                <Link to="/serve" style={{color:"white", textDecoration:"none"}}><NavLinks>Services</NavLinks></Link>
+                <Link to="/blog" style={{color:"white", textDecoration:"none"}}><NavLinks>Blog</NavLinks></Link>
 
             </NavBar>
            
