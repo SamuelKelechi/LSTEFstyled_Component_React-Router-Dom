@@ -1,10 +1,15 @@
 import React from 'react'
+import Slider from './Hero/Slide'
+
+
 
 function Home() {
+
+
   return (
-    <div>
-        THIS IS MY HOME PAGE
-    </div>
+    <>
+        <Slider />
+    </>
   )
 }
 

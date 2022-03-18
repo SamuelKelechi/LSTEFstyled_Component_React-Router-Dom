@@ -1,3 +1,4 @@
+import 'antd/dist/antd.css';
 import Navbar from './Components/NavBar/Navbar'
 import GlobalStyle from './GlobalStyle';
 import Home from './Components/Home/Home'
